@@ -1,15 +1,14 @@
 import React from "react";
-import Login from "./Login";
 // import KaKaoLogin from 'react-kakao-login';
 
-function App() {
+function Landing() {
   return (
-    <div >
-<Login />
-     </div>
+    <div className="Landing">
+      <h1>KaKaoLogin</h1>
+      <a href="http://localhost:5000/oauth"><img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg" /> </a>
+    </div>
   );
 }
-
 
 // function KakaoLoginButton() {
 //   return (
@@ -28,4 +27,4 @@ function App() {
 //   );
 // }
 
-export default App;
+export default Landing;
