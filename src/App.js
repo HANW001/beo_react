@@ -1,6 +1,6 @@
 import React from "react";
 import Login from "./Login";
-import Landing from "./main_landing/landing.js"
+import Landing from "./main_landing/Landing.js"
 // import KaKaoLogin from 'react-kakao-login';
 
 function App() {
