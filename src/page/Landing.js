@@ -59,6 +59,10 @@ render() {
   const sex = '여성';
   const price = '20만원 내외';
   const like = '화장품'
+  const giftcomment = '제품 가격'
+  const giftcomment2 = '367,000원'
+  const giftcomment3 = '제품 설명'
+  const giftcomment4 = '상품 설명이 보여집니다.\n설명이 없는경우 제품설명 텍스트까지 전체 다 보여지지 않습니다'
     return (  
       <div >
         <img className="img" src="img/beo_logo.png" alt={'logo'} /> 
@@ -88,10 +92,10 @@ render() {
         <p className = 'reason'>추천 이유</p>
         <p className = 'reason2'>추천 이유 (태그라인)설명이 들어갑니다. 추천이유가 길어지는 경우 전체가 다 보여야 합니다</p>
         <hr className='divider2'/>
-        <p className='giftcomment'>제품 가격</p>
-        <p className='giftcomment2'>367,000원</p>
-        <p className='giftcomment3'>제품 설명</p>
-        <p className='giftcomment4'>상품 설명이 보여집니다. 설명이 없는경우 제품설명 텍스트까지 전체다 보여지지 않습니다</p>
+        <p className='giftcomment'>{giftcomment}</p>
+        <p className='giftcomment2'>{giftcomment2}</p>
+        <p className='giftcomment3'>{giftcomment3}</p>
+        <p className='giftcomment4'>{giftcomment4}</p>
         <div className='button' />
       </div>
   );

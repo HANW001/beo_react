@@ -493,6 +493,7 @@
   height: 60px;
   left: 20px;
   top: 1249px;
+  white-space: pre-wrap;
 
   font-family: Pretendard;
   font-style: normal;
