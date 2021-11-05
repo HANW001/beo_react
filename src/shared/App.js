@@ -1,16 +1,21 @@
 import React from "react";
-import Login from "./Login";
-import Landing from "./main_landing/landing.js"
+import { Component } from "react";
+import { Login, Landing } from '../page';
+import { Route } from "react-router";
 // import KaKaoLogin from 'react-kakao-login';
 
-function App() {
-  return (
-    <div >
-{/* <Login /> */}
-<Landing />
-     </div>
-  );
+class App extends Component{
+  render(){
+    return (
+      <div >
+        <Route exact path="/" component={Login}/>
+        <Route path="/Landing" component={Landing}/>
+        <Route path="/Landing/:name" component={Landing}/>
+       </div>
+    );
+  }
 }
+
 
 
 // function KakaoLoginButton() {
