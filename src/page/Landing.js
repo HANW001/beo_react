@@ -96,7 +96,95 @@ render() {
         <p className='giftcomment2'>{giftcomment2}</p>
         <p className='giftcomment3'>{giftcomment3}</p>
         <p className='giftcomment4'>{giftcomment4}</p>
-        <div className='button' />
+        <div className='jb-wrap'>
+          <div className='button'>
+            <img src='img/rectangle1.png' />
+          </div>
+          <div className='buttontext'>
+            <a>구매하기</a>
+          </div>
+        </div>
+
+        <div className='jb-wrap'>
+          <div className='button2'>
+            <img src='img/shared1.png' />
+          </div>
+       
+        </div>
+
+        <div className='jb-wrap'>
+          <div className='button3'>
+            <img src='img/rectangle2.png' />
+          </div>
+          <div className='buttontext3'>
+            <a>구매하기</a>
+          </div>
+        </div>
+
+          <div className='divider3'>
+            <img src='img/rectangle5.png' />
+          </div>
+
+        <div className='q-wrap' >
+        <img className='qbg' src ='img/rectangle4.png' />
+            <div>
+             <a className='qcomment'>혼자 결정하기 어렵다면,</a>
+             <a className='qcomment2'>친구에게 물어보기</a>
+            </div>
+          <div>
+            <div className='qicon'>
+              <img src ='img/kakaoicon.png' />
+            </div>
+            <div className='qicon2'>
+              <img src ='img/shared.png' />
+            </div>
+          </div>
+          <div className='qimg'>
+            <img src ='img/kakaocomment.png' />
+          </div>
+         
+        </div>
+
+        <div className='divider4'>
+            <img src='img/rectangle5.png' />
+          </div>
+
+          <div>
+            <a className='beotitle'>선물 연구소</a>
+            <a className='beotitle2'>좋은 선물에 대해서 고민하고 연구합니다.</a>
+          </div>
+
+          <div>
+            <div className='beoimg'>
+              <img src ='img/backimage1.png' />
+            </div>
+            <div>
+              <a className='beocomment'>상품 자체 검증 프로세스</a>
+              <a className='beocomment2'>5단계 검증 프로세스를 통해 선별한 차별화된 상품 데이터</a>
+            </div>
+         
+          </div>
+
+          <div>
+            <div className='beoimg2'>
+              <img src ='img/backimage2.png' />
+            </div>
+            <div>
+              <a className='beocomment3'>개인화 추천 알고리즘</a>
+              <a className='beocomment4'>선물 상황, 개인의 성향까지 반영할 수 있는 추천 알고리즘</a>
+            </div>
+         
+          </div>
+
+          <div className='bottomimg'>
+            <img  src ='img/bottom.png' />
+          </div>
+        
+        
+        
+       
+        
+        
       </div>
   );
 }

@@ -398,6 +398,22 @@
   background: rgba(0, 0, 0, 0.2);
 }
 
+.divider3 {
+  position: absolute;
+  width: 360px;
+  height: 10px;
+  left: 0px;
+  top: 1479px;
+}
+
+.divider4 {
+  position: absolute;
+  width: 360px;
+  height: 10px;
+  left: 0px;
+  top: 1901px;
+}
+
 .reason {
   position: absolute;
   width: 52px;
@@ -507,20 +523,303 @@
   color: #666666;
 }
 
-button {
-  height: 56px;
-  width: 228px;
-  left: 112px;
-  top: 0px;
-  border-radius: 0px;
+.button {
+  /* Rectangle 18 */
 
   position: absolute;
   width: 228px;
   height: 56px;
   left: 112px;
-  top: 0px;
+  top: 955px;
+}
+
+.button2 {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 0px;
+  top: 955px;
 
   /* System Gray 04 */
 
   background: #444444;
+}
+
+.button3 {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 56px;
+  top: 955px;
+
+  /* System Gray 04 */
+
+  background: #444444;
+}
+
+.buttontext {
+  position: absolute;
+  width: 56px;
+  height: 19px;
+  left: 206px;
+  top: 970px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* transform: translate(-50%, -50%); */
+
+  /* System White */
+
+  color: #ffffff;
+}
+
+.buttontext2 {
+  position: absolute;
+  width: 56px;
+  height: 19px;
+  left: 0px;
+  top: 970px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* transform: translate(-50%, -50%); */
+
+  /* System White */
+
+  color: #ffffff;
+}
+
+.buttontext3 {
+  position: absolute;
+  width: 56px;
+  height: 19px;
+  left: 50px;
+  top: 970px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  /* transform: translate(-50%, -50%); */
+
+  /* System White */
+
+  color: #ffffff;
+}
+
+.jb-wrap {
+  margin: 10px auto;
+  position: relative;
+}
+
+.qcomment {
+  position: absolute;
+  width: 122px;
+  height: 16px;
+  left: 40px;
+  top: 1523px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: #444444;
+}
+
+.qcomment2 {
+  /* 친구에게 물어보기 */
+
+  position: absolute;
+  width: 129px;
+  height: 22px;
+  left: 40px;
+  top: 1541px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.qicon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 40px;
+  top: 1571px;
+}
+
+.qicon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 40px;
+  top: 1571px;
+}
+
+.qicon2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 66px;
+  top: 1571px;
+}
+
+.qimg {
+  position: absolute;
+  width: 118px;
+  height: 35px;
+  left: 202px;
+  top: 1539px;
+}
+
+.qbg {
+  position: absolute;
+  width: 320px;
+  height: 94px;
+  left: 20px;
+  top: 1509px;
+}
+/* .q-wrap {
+  position: relative;
+} */
+
+.beotitle {
+  position: absolute;
+  width: 119px;
+  height: 31px;
+  left: 119px;
+  top: 1951px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+
+  /* System Black 100 */
+
+  color: #000000;
+}
+
+.beotitle2 {
+  position: absolute;
+  width: 240px;
+  height: 18px;
+  left: 60px;
+  top: 1996px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 18px;
+  /* identical to box height */
+
+  /* System Black 100 */
+
+  color: #000000;
+}
+
+.beoimg {
+  position: absolute;
+  width: 320px;
+  height: 106px;
+  left: 20px;
+  top: 2046px;
+}
+
+.beoimg2 {
+  position: absolute;
+  width: 320px;
+  height: 106px;
+  left: 20px;
+  top: 2167px;
+}
+
+.beocomment {
+  position: absolute;
+  width: 150px;
+  height: 19px;
+  left: 35px;
+  top: 2069px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #49382e;
+}
+.beocomment2 {
+  position: absolute;
+  width: 145px;
+  height: 40px;
+  left: 35px;
+  top: 2092px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* or 154% */
+
+  color: #513f35;
+}
+
+.beocomment3 {
+  position: absolute;
+  width: 132px;
+  height: 19px;
+  left: 35px;
+  top: 2190px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #49382e;
+}
+
+.beocomment4 {
+  position: absolute;
+  width: 148px;
+  height: 40px;
+  left: 35px;
+  top: 2213px;
+
+  font-family: Pretendard;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 20px;
+  /* or 154% */
+
+  color: #513f35;
+}
+
+.bottomimg {
+  position: absolute;
+  width: 360px;
+  height: 275px;
+  left: 0px;
+  top: 2323px;
 }
