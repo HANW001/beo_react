@@ -1,6 +1,6 @@
 import React from "react";
 import { Component } from "react";
-import { Login, Landing } from '../page';
+import { Login, Landing, MainHome } from '../page';
 import { Route } from "react-router";
 // import KaKaoLogin from 'react-kakao-login';
 
@@ -11,6 +11,7 @@ class App extends Component{
         <Route exact path="/Kakao" component={Login}/>
         <Route path="/Landing" component={Landing}/>
         <Route path="/Landing/:name" component={Landing}/>
+        <Route path="/MainHome" component={MainHome}/>
        </div>
     );
   }
