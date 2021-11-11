@@ -161,21 +161,24 @@ const Index = () => {
               </div>
           </div>
           <div>
-              <div className='req-bg'>
+              <div className='req-bg' data-aos="fade-up">
                   <img src='img/beo_bg01.png' />
               </div>
-              <div className='req-comment'>
+              <div className='req-comment' data-aos="fade-up">
                   <a>{req_comment}</a>
               </div>
-              <div className='req-button'>
+              <div className='req-button' data-aos="fade-up">
                 <img src='img/beo_req_button.png' />
               </div>
           </div>
-          <div className='bottom'>
+          <div className='bottom' data-aos="fade-up">
               <img src='img/beo_bottom.png'></img>
           </div>
-          <div className='bottom-button'>
+          <div className='bottom-button' data-aos="fade-up">
               <img src='img/gift_button.png'></img>
+          </div>
+          <div className='bottom-40'>
+              <a>''</a>
           </div>
         </>
     )
