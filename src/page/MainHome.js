@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import './MainApp.css';
+import Sliders from './Text_Slide'
 
 const Index = () => {
     const beo_comment = '1분\n선물 추천'
@@ -16,15 +17,8 @@ const Index = () => {
     const review_comment2 = '베오 덕에\n행복한 시간을 보냈어요.'
 
     const req_comment = '베오와 함께라면\n당신의 기념일이\n새로워질 거예요'
-    let boxStyle = {
-        width: '40%',
-        height: '200px',
-        fontSize: '30px',
-        lineHeight: '200px',
-        background: 'black',
-        color: 'white',
-        textAlign: 'center'
-    }
+
+    const [visible, setVisible] = useState(false);
 
     useEffect(() => {
         AOS.init({
@@ -48,11 +42,12 @@ const Index = () => {
             </div>
             <div style={{height: '500px'}}></div>
           </div> */}
-          <div>
-              <div className="bg">
-                  <img  src="img/main_image.png" />
+          <div className = 'all'>
+          <div >
+              <div className="bg" >
+                  {/* <img  src="img/main_image.png" /> */}
               </div>
-              <div className='img' data-aos="fade-up">
+              <div className='img' data-aos="fade-up" aos-easing='ease-in-sine'>
                   <img  src="img/kakao_img.png" />
               </div>
               <div  className='img-comment' data-aos="fade-up">
@@ -68,22 +63,35 @@ const Index = () => {
                   <a>내게 꼭 맞는 선물 추천을 받아보세요.</a>
               </div>
           </div>
-          <div className='slide' data-aos="fade-up">
-              <img src='img/bg_rec.png' />
-          </div>
-          <div>
+         
+              <Sliders />
+         
+          <div >
+          <div >
               <div className='beo-comment' data-aos="fade-up"> 
-                  <a >선물 전문가 베오가 도와드릴게요.</a>
+              <img src='img/beo_req_gift.png' />
               </div>
               <div className='beo-comment2' data-aos="fade-up">
-                  <a >{beo_comment}</a>
+              <img src='img/beo_req_gift_1.png' />
               </div>
               <div className='beo-comment3' data-aos="fade-up">
-                  <a >{beo_comment2}</a>
+              <img src='img/beo_req_gift_2.png' />
               </div>
-              <div className='beo-img' data-aos="fade-up">
-                  <img src='img/phone.png' />
               </div>
+
+                {/* <div className='beo-comment' data-aos="fade-up"> 
+                    <a >선물 전문가 베오가 도와드릴게요.</a>
+                </div>
+                <div className='beo-comment2' data-aos="fade-up">
+                    <a >{beo_comment}</a>
+                </div>
+                <div className='beo-comment3' data-aos="fade-up">
+                    <a >{beo_comment2}</a>
+                </div>
+                <div className='beo-img' data-aos="fade-up">
+                    <img src='img/phone.png' />
+                </div> */}
+            </div>
               <div className='beo-comment4' data-aos="fade-up">
                   <a >{beo_comment3}</a>
               </div>
@@ -119,7 +127,7 @@ const Index = () => {
               <div className='beo-img3' data-aos="fade-up">
                   <img src='img/beo_req.png'/>
               </div>
-          </div>
+          
 
           <div className = 'bg-color'>
               <div className='review-comment' data-aos="fade-up">
@@ -159,27 +167,44 @@ const Index = () => {
               <div className = 'faq' data-aos="fade-up">
                   <a>FAQ</a>
               </div>
+              <div className= 'faq01'>
+                  {/* <button className= 'faq01'>
+                  <img src='img/beo_FAQ01.png' 
+                  onClick={()=> 
+                    setVisible(!visible),
+                    alert(visible)}
+                  >
+                  </img>
+                  </button> */}
+                
+
+              </div>
+              
           </div>
           <div>
-              <div className='req-bg' data-aos="fade-up">
-                  <img src='img/beo_bg01.png' />
+              <div className='req-bg' >
+                  {/* <img src='./img/beo_bg03.png' /> */}
               </div>
-              <div className='req-comment' data-aos="fade-up">
+              <div className='req-comment' >
                   <a>{req_comment}</a>
               </div>
-              <div className='req-button' data-aos="fade-up">
+              <div className='req-button' >
                 <img src='img/beo_req_button.png' />
               </div>
           </div>
-          <div className='bottom' data-aos="fade-up">
+          <div className='bottom' >
               <img src='img/beo_bottom.png'></img>
           </div>
-          <div className='bottom-button' data-aos="fade-up">
+          <div>
+          
+          <div className='bottom-button' >
               <img src='img/gift_button.png'></img>
           </div>
           <div className='bottom-40'>
-              <a>''</a>
+              <a></a>
           </div>
+            </div>
+            </div>
         </>
     )
 };
