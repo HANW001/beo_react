@@ -6,9 +6,14 @@
   font-family: Pretendard;
   src: url("./fonts/Pretendard-Regular.otf");
 }
+.all {
+  text-align: center;
+  margin: auto;
+  width: 300px;
+}
 
 .bg {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
   left: 0px;
@@ -19,7 +24,15 @@
 }
 
 .img {
-  position: absolute;
+  /* position: relative; */
+  width: 164px;
+  height: 38px;
+  /* left: 227px; */
+  /* top: 199px; */
+}
+
+.img {
+  /* position: absolute; */
   width: 164px;
   height: 38px;
   left: 227px;
@@ -27,7 +40,7 @@
 }
 
 .img-comment {
-  position: absolute;
+  /* position: absolute; */
   width: 428px;
   height: 65px;
   left: 227px;
@@ -44,7 +57,7 @@
 }
 
 .img-comment2 {
-  position: absolute;
+  /* position: absolute; */
   width: 382px;
   height: 65px;
   left: 227px;
@@ -61,7 +74,7 @@
 }
 
 .img-comment3 {
-  position: absolute;
+  /* position: absolute; */
   width: 338px;
   height: 24px;
   left: 227px;
@@ -78,7 +91,7 @@
 }
 
 .img-comment4 {
-  position: absolute;
+  /* position: absolute; */
   width: 289px;
   height: 24px;
   left: 227px;
@@ -539,28 +552,28 @@
   } */
 
   .bg {
-    position: absolute;
+    /* position: absolute; */
     width: 100%;
     max-height: 100%;
     left: 0px;
     top: 0px;
     /* display: flex; */
 
-    background-size: cover;
     background-image: url("./img/main_image.png");
+    background-size: cover;
   }
 
   .img {
-    position: absolute;
+    /* position: absolute; */
     width: 126px;
     height: 32px;
-    left: 20px;
-    top: 80px;
+    /* left: 20px; */
+    /* top: 80px; */
   }
 
   .img-comment {
-    position: absolute;
-    width: 80%;
+    /* position: absolute; */
+    width: 100%;
     height: 38px;
     left: 20px;
     top: 128px;
@@ -575,7 +588,7 @@
   }
 
   .img-comment2 {
-    position: absolute;
+    /* position: absolute; */
     width: 80%;
     height: 38px;
     left: 20px;
@@ -591,7 +604,7 @@
   }
 
   .img-comment3 {
-    position: absolute;
+    /* position: absolute; */
     width: 237px;
     height: 17px;
     left: 20px;
@@ -607,7 +620,7 @@
   }
 
   .img-comment4 {
-    position: absolute;
+    /* position: absolute; */
     width: 203px;
     height: 17px;
     left: 20px;

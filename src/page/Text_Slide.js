@@ -1,79 +1,92 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import './MainApp.css';
+import React from "react";
+import Carousel from "react-material-ui-carousel";
+import { Paper } from "@mui/material";
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 2000
-    };
-    const hstyle = {
-      // position: 'absolute',
-      width: '113px',
-      height: '19px',
-      left: '124px',
-      top: '60px',
-      
-      fontfamily: 'Pretendard',
-      fontstyle: 'normal',
-      fontweight: 'bold',
-      fontsize: '16px',
-      lineheight: '19px',
-      
-      color: '#45332F',
-    }
-    return (
-   
-        <Slider {...settings} className='slider'>
-          <div className='slider-container'>
-            <div className='slider-text' >
-              <a>이런 고민 많았죠?</a>
-            </div>
-            <div  className='slider-text2'>
-              <a>뭘 좋아할지 몰라 네**, 인***램에서 몇 시간을 허비했는지 몰라요</a>
-            </div>
-             <div className='slider-text3' >
-              <a> 30대 서울 직장인 김*성님</a>
-            </div>
-           
+function Example(props) {
+  var items = [
+    {
+      title: "이런 고민 많았죠?",
+      description:
+        "뭘 좋아할지 몰라 네**, 인***램에서 몇 시간을 허비했는지 몰라요",
+      name: "30대 서울 직장인 김*성님",
+    },
+    {
+      title: "",
+      description:
+        "선물 추천을 받고 싶어 검색해도 온통 광고. 믿을 수가 없어요.",
+      name: "20대 인천 대학생 오* 연님",
+    },
+    {
+      title: "",
+      description:
+        "부모님 선물 찾다가 어려워서 역시 현금이 최고라고 합리화해 버리곤 해요",
+      name: "40대 대구 자영업자 이*영님",
+    },
+  ];
 
-          </div>
-          <div>
-          <div className='slider-text' >
-              <a></a>
-            </div>
-            <div className='slider-text4' >
-              <a>선물 추천을 받고 싶어 검색해도 온통 광고. 믿을 수가 없어요.  </a>
-            </div>
-             <div  className='slider-text5'>
-              <a> 20대 인천 대학생 오* 연님</a>
-            </div>
-           
-
-          </div> <div>
-          <div className='slider-text' >
-              <a></a>
-            </div>
-            <div  className='slider-text6'>
-              <a>부모님 선물 찾다가 어려워서 역시 현금이 최고라고 합리화해 버리곤 해요</a>
-            </div>
-             <div className='slider-text7'>
-              <a> 40대 대구 자영업자 이*영님</a>
-            </div>
-           
-
-          </div>
-         
-        </Slider>
-    
-    );
-  }
+  return (
+    <Carousel PrevIcon={false} NextIcon={false}>
+      {items.map((item, i) => (
+        <Item key={i} item={item} />
+      ))}
+    </Carousel>
+  );
 }
+
+function Item(props) {
+  return (
+    <Paper
+      style={{
+        position: "relative",
+        height: "288px",
+        backgroundColor: "#BEB0A7",
+        textAlign: "center",
+      }}
+    >
+      <p
+        style={{
+          position: "absolute",
+          // height: "288px",
+          top: "60px",
+          width: "100%",
+          textAlign: "center",
+          fontSize: "16px",
+          fontFamily: "Pretendard",
+          fontWeight: "bold",
+          color: "#45332F",
+        }}
+      >
+        {props.item.title}
+      </p>
+      <p
+        style={{
+          position: "absolute",
+          top: "90px",
+          width: "100%",
+          fontSize: "20px",
+          fontFamily: "Pretendard",
+          fontWeight: "bold",
+          color: "#FFFFFF",
+        }}
+      >
+        {props.item.description}
+      </p>
+      <p
+        style={{
+          position: "absolute",
+          top: "178px",
+          textAlign: "center",
+          width: "100%",
+          fontSize: "12px",
+          fontFamily: "Pretendard",
+          fontWeight: "bold",
+          color: "#000000",
+        }}
+      >
+        {props.item.name}
+      </p>
+    </Paper>
+  );
+}
+
+export default Example;
