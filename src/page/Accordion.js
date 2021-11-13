@@ -23,7 +23,7 @@ export default function ControlledAccordions() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography
+          <Typography 
             style={{
               fontSize: "14px",
               fontFamily: "Pretendard",

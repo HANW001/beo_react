@@ -23,6 +23,7 @@ const Index = () => {
 
   const req_comment = "베오와 함께라면\n당신의 기념일이\n새로워질 거예요";
 
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -31,8 +32,7 @@ const Index = () => {
 
   return (
     <div
-      className=""
-      style={{ margin: "auto", }}
+      className="all"
     >
       <div
         className=""
@@ -43,85 +43,51 @@ const Index = () => {
         //   objectFit: "cover",
         // }}
       >
-        <img src="img/main_image.png" style={{ width: "100%" }} />
         <div
-          className=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            top: "80px",
-            width: "126px",
-          }}
+        >
+          <picture>
+            <source media="(min-width:1020px)" srcSet="./img/main_image2.png" />
+            <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
+            <img src="img/main_image.png" style={{ width: "100%", height:"100%" }} />
+          </picture>
+           
+        </div>
+       
+        <div
+          className="img"
+    
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
           <img src="img/kakao_img.png" />
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            top: "95px",
-            // width: "100%",
-            color: "white",
-            fontSize: "32px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-            lineHeight: "38px",
-          }}
+          className="img-comment"
+
           data-aos="fade-up"
           data-aos-delay="50"
         >
           <p>선물 고민 중인가요?</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            top: "140px",
-            // width: "100%",
-            color: "white",
-            fontSize: "32px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-            lineHeight: "38px",
-          }}
+          className="img-comment2"
+
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>1분이면 충분해요</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            top: "205px",
-            // width: "100%",
-            color: "white",
-            fontSize: "14px",
-            fontFamily: "Pretendard",
-            lineHeight: "17px",
-          }}
+          className="img-comment3"
+       
           data-aos="fade-up"
           data-aos-delay="150"
         >
           <p>200만건 이상의 선물 데이터를 분석했어요.</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            left: "20px",
-            top: "225px",
-            // width: "100%",
-            color: "white",
-            fontSize: "14px",
-            fontFamily: "Pretendard",
-            lineHeight: "17px",
-          }}
+          className="img-comment4"
+         
           data-aos="fade-up"
           data-aos-delay="200"
         >
@@ -130,72 +96,35 @@ const Index = () => {
       </div>
       <Sliders />
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "758px",
-          textAlign: "center",
-        }}
+        className="beo"
+     
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "60px",
-
-            width: "100%",
-            color: "black",
-            fontSize: "16px",
-            fontFamily: "Pretendard",
-          }}
+          className="beo-comment"
+        
           data-aos="fade-up"
           data-aos-delay="50"
         >
           <p>선물 전문가 베오가 도와드릴게요.</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "139px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "26px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="beo-comment2"
+      
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{beo_comment}</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "229px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-
-            fontSize: "15px",
-            fontFamily: "Pretendard",
-          }}
+          className="beo-comment3"
           data-aos="fade-up"
           data-aos-delay="150"
         >
           <p>{beo_comment2}</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "273px",
-            height: "484.9px",
-            width: "100%",
-          }}
+          className="beo-img"
+       
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -204,196 +133,126 @@ const Index = () => {
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "537px",
-          textAlign: "center",
-        }}
+        className="beo2"
+    
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "100px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "26px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="beo-comment4"
+    
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{beo_comment3}</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "190px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
+          className="beo-comment5"
 
-            fontSize: "15px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
           data-aos="fade-up"
           data-aos-delay="150"
         >
           <p>{beo_comment4}</p>
         </div>
         <div
-          className=""
-          style={{ position: "absolute", top: "279px", width: "100%" }}
+          className="beo-img2"
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
-          <img src="img/no_ads.png" />
+             <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/no_ads_03.png" />
+            <img src="img/no_ads.png" />
+          </picture>
+         
         </div>
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "598px",
-          textAlign: "center",
-        }}
+        className="beo3"
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "100px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "26px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="beo-comment6"
+   
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{beo_comment5}</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "190px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-
-            fontSize: "15px",
-            fontFamily: "Pretendard",
-          }}
+          className="beo-comment7"
+    
           data-aos="fade-up"
           data-aos-delay="150"
         >
           <p>{beo_comment6}</p>
         </div>
 
-        <div style={{ textAlign: "center",width:'100%',}}>
+        <div  className="beo-imgs">
           <div
-            className=""
-            style={{
-              position: "absolute",
-              width:'100%',
-              right:'20px',
-              // left: "10px",
-              top: "279px",
-            }}
+            className="beo-chatimg"
+     
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
+            <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_chat01_03.png" />
             <img src="img/beo_chat01.png" />
+          </picture>
+            
           </div>
 
           <div
-            className=""
-            style={{
-              textAlign: "right",
-              position: "absolute",
-              width: '100%',
-              right:'50px',
-              // left:'130px' ,
-              top: "350px",
-            }}
+            className="beo-chatimg2"
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
+            <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_chat02_03.png" />
             <img src="img/beo_chat02.png" />
+          </picture>
           </div>
 
           <div
-            className=""
-            style={{
-              position: "absolute",
-              width:'100%',
-              right:'10px',
-              top: "403px",
-            }}
+            className="beo-chatimg3"
+         
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
+             <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_chat03_03.png" />
             <img src="img/beo_chat03.png" />
+          </picture>
           </div>
 
           <div
-            className=""
-            style={{
-              textAlign: "right",
-              position: "absolute",
-              width:'100%',
-              right:'50px',
-              // left: "292px",
-              top: "492px",
-            }}
+            className="beo-chatimg4"
+          
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
+             <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_chat04_03.png" />
             <img src="img/beo_chat04.png" />
+          </picture>
           </div>
         </div>
       </div>
 
        <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "768px",
-          textAlign: "center",
-        }}
+        className="beo4"
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "60px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "30px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="beo-comment8"
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{beo_comment7}</p>
         </div>
         <div
-          className=""
-          style={{ position: "absolute", top: "201px", width: "100%", }}
+          className="beo-img3"
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -402,45 +261,20 @@ const Index = () => {
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "1270px",
-          textAlign: "center",
-          backgroundColor: "#FFFAF5",
-        }}
+        className="beo5"
+   
       >
       <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "40px",
-            width: "100%",
-            color: "#49382E",
-            whiteSpace: "pre-wrap",
-            fontSize: "20px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="review-comment"
+
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{review_comment}</p>
         </div>
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "96px",
-            width: "100%",
-            color: "#49382E",
-            whiteSpace: "pre-wrap",
+          className="review-comment2"
 
-            fontSize: "18px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -448,8 +282,8 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{ position: "absolute", top: "180px", width: "100%", }}
+          className="review-img"
+          
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -457,8 +291,8 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{ position: "absolute", top: "450px", width: "100%", }}
+          className="review-img2"
+        
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -466,8 +300,8 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{ position: "absolute", top: "723px", width: "100%", }}
+          className="review-img3"
+         
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -475,8 +309,8 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{ position: "absolute", top: "973px", width: "100%", }}
+          className="review-img4"
+         
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -485,26 +319,12 @@ const Index = () => {
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "475px",
-          textAlign: "center",
-        }}
+        className="beo6"
+
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "70px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "26px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="gift-comment"
+    
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -512,62 +332,48 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "132px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "15px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="gift-comment2"
+
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>좋은 선물에 대해서 고민하고 연구합니다.</p>
         </div>
         <div
-          className=""
-          style={{ position: "absolute", top: "208px", width: "100%", }}
+          className="gift-img"
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
-          <img src="img/beo_gift01.png" />
+           <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_gift03.png" />
+            <img src="img/beo_gift01.png" />
+          </picture>
+          
+          
         </div>
 
         <div
-          className=""
-          style={{ position: "absolute", top: "329px", width: "100%", }}
+          className="gift-img2"
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
-          <img src="img/beo_gift02.png" />
+           <picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_gift04.png" />
+            <img src="img/beo_gift02.png" />
+          </picture>
+          
         </div>
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "495px",
-          textAlign: "center",
-        }}
+        className="beo7"
+
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "70px",
-            width: "100%",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "22px",
-            fontFamily: "Pretendard",
-            fontWeight: "bold",
-          }}
+          className="faq"
+ 
           data-aos="fade-up"
           data-aos-delay="100"
         >
@@ -575,59 +381,47 @@ const Index = () => {
         </div>
 
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "150px",
-            width: "100%",
-            textAlign: "center",
-          }}
+          className="faq-menu"
+       
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
-          <div style={{textAlign:'center',width:'90%', margin:'auto'}}>
-          <Accordion />
+          <div className='faq-menu2'>
+          <Accordion  />
           </div>
         </div>
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "266px",
-          textAlign: "center",
-        }}
+        className="beo8"
+      
       >
         <div
-          className=""
-          style={{ position: "absolute", width: "100%", }}
+          className="req-bg"
+ 
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
-          <img src="img/beo_bg01.png" style={{width: "100%"}}  />
+
+<picture>
+            
+            <source media="(min-width:1440px)" srcSet="img/beo_bg03.png" />
+            <img src="img/beo_bg01.png" style={{width: "100%"}}  />
+          </picture>
+         
         </div>
 
         <div
-          className=""
-          style={{
-            position: "absolute",
-            top: "5px",
-            width: "100%",
-            height: "90px",
-            color: "black",
-            whiteSpace: "pre-wrap",
-            fontSize: "22px",
-          }}
+          className="req-comment"
+  
           data-aos="fade-up"
           data-aos-delay="100"
         >
           <p>{req_comment}</p>
         </div>
         <div
-          className=""
-          style={{ position: "absolute", top: "134px", width: "100%", }}
+          className="req-button"
+          
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -636,46 +430,43 @@ const Index = () => {
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "340px",
-          textAlign: "center",
-        }}
+        className="beo9"
       >
+
+        
         <div
-          className=""
-          style={{ position: "absolute", top: "194px", width: "100%", }}
+          className="bottom"
         >
-          <img src="/img/beo_bottom.png"  style={{ width: "100%", }}/>
+             <picture>
+            <source media="(min-width:1020px)" srcSet="/img/beo_bottom_02.png" />
+            <source media="(min-width:1440px)" srcSet="/img/beo_bottom_03.png" />
+            <img src="/img/beo_bottom.png"  style={{ width: "100%", }}/>
+          </picture>
+         
         </div>
       </div>
 
       <div
-        className=""
-        style={{
-          position: "relative",
-          width: "100%",
-          height: "200px",
-
-          textAlign: "center",
-        }}
+        className="beo10"
       >
         <div
-          className=""
-          style={{
-            position: "absolute",
-            height: "75px",
-            top: "250px",
-            width: "100%",
-          }}
+          className="bottom-button"
         >
-          <img src="/img/gift_button.png" />
+           <picture>
+           <source media="(min-width:360)" src="./img/gift_button.png" />
+            <source media="(min-width:1020px )" src="./img/gift_button.png" />
+            <source media="(min-width:1440px)"  />
+            <img src="./img/gift_button.png" />
+          </picture>
+          
         </div>
       </div>
     </div>
   );
+
+
+  
+
 };
 
 export default Index;

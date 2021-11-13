@@ -6,555 +6,20 @@
   font-family: Pretendard;
   src: url("./fonts/Pretendard-Regular.otf");
 }
-.all {
-  text-align: center;
-  margin: auto;
-  width: 300px;
-}
-
-.bg {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  left: 0px;
-  top: 0px;
-
-  background-size: cover;
-  background-image: url("./img/main_image3.png");
-}
-
-.img {
-  /* position: relative; */
-  width: 164px;
-  height: 38px;
-  /* left: 227px; */
-  /* top: 199px; */
-}
-
-.img {
-  /* position: absolute; */
-  width: 164px;
-  height: 38px;
-  left: 227px;
-  top: 199px;
-}
-
-.img-comment {
-  /* position: absolute; */
-  width: 428px;
-  height: 65px;
-  left: 227px;
-  top: 267px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 65px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-
-.img-comment2 {
-  /* position: absolute; */
-  width: 382px;
-  height: 65px;
-  left: 227px;
-  top: 342px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 54px;
-  line-height: 65px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-
-.img-comment3 {
-  /* position: absolute; */
-  width: 338px;
-  height: 24px;
-  left: 227px;
-  top: 432px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-
-.img-comment4 {
-  /* position: absolute; */
-  width: 289px;
-  height: 24px;
-  left: 227px;
-  top: 464px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 24px;
-  /* identical to box height */
-
-  color: #ffffff;
-}
-.img-button {
-  position: absolute;
-  width: 207px;
-  height: 50px;
-  left: 227px;
-  top: 537px;
-}
-
-.slide {
-  position: absolute;
-  width: 1440px;
-  height: 371px;
-  left: 0px;
-  top: 100%;
-
-  background: #beb0a7;
-}
-
-.beo-comment {
-  position: absolute;
-  width: 315px;
-  height: 29px;
-  left: 230px;
-  top: 1475px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-comment2 {
-  position: absolute;
-  width: 148px;
-  height: 100px;
-  left: 230px;
-  top: 1748px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-comment3 {
-  position: absolute;
-  width: 386px;
-  height: 56px;
-  left: 230px;
-  top: 1872px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-img {
-  position: absolute;
-  width: 490px;
-  height: 880px;
-  left: 720px;
-  top: 1395px;
-}
-
-.beo-comment4 {
-  position: absolute;
-  width: 148px;
-  height: 100px;
-  left: 800px;
-  top: 2465px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-comment5 {
-  position: absolute;
-  width: 302px;
-  height: 56px;
-  left: 800px;
-  top: 2589px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-img2 {
-  position: absolute;
-  width: 371px;
-  height: 230px;
-  left: 230px;
-  top: 2440px;
-}
-
-.beo-comment6 {
-  position: absolute;
-  width: 226px;
-  height: 100px;
-  left: 230px;
-  top: 2985px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 40px;
-  line-height: 48px;
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-comment7 {
-  position: absolute;
-  width: 376px;
-  height: 56px;
-  left: 230px;
-  top: 3109px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  /* or 140% */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-chatimg {
-  position: absolute;
-  width: 292px;
-  height: 59px;
-  left: 816px;
-  top: 2947px;
-}
-.beo-chatimg2 {
-  position: absolute;
-  width: 61px;
-  height: 39px;
-  left: 1149px;
-  top: 3019px;
-}
-.beo-chatimg3 {
-  position: absolute;
-  width: 330px;
-  height: 81px;
-  left: 816px;
-  top: 3071px;
-}
-.beo-chatimg4 {
-  position: absolute;
-  width: 51px;
-  height: 38px;
-  left: 1159px;
-  top: 3165px;
-}
-
-.beo-comment8 {
-  position: absolute;
-  width: 272px;
-  height: 192px;
-  left: 800px;
-  top: 3615px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 64px;
-  /* or 133% */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.beo-img3 {
-  position: absolute;
-  width: 490px;
-  height: 880px;
-  left: 230px;
-  top: 3335px;
-}
-
-.bg.color {
-  position: absolute;
-  width: 1440px;
-  height: 739px;
-  left: 0px;
-  top: 4315px;
-
-  background: #fffaf5;
-}
-
-.review-comment {
-  position: absolute;
-  width: 183px;
-  height: 34px;
-  left: 231px;
-  top: 4415px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  line-height: 34px;
-  /* identical to box height */
-
-  color: #49382e;
-}
-
-.review-comment2 {
-  position: absolute;
-  width: 226px;
-  height: 58px;
-  left: 230px;
-  top: 4469px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 29px;
-
-  color: #49382e;
-}
-
-.review-img {
-  position: absolute;
-  width: 320px;
-  height: 287px;
-  left: 540px;
-  top: 4347px;
-}
-
-.review-img2 {
-  position: absolute;
-  width: 320px;
-  height: 267px;
-  left: 540px;
-  top: 4664px;
-}
-
-.review-img3 {
-  position: absolute;
-  width: 320px;
-  height: 287px;
-  left: 890px;
-  top: 4398px;
-}
-
-.review-img4 {
-  position: absolute;
-  width: 320px;
-  height: 257px;
-  left: 890px;
-  top: 4715px;
-}
-
-.gift-comment {
-  position: absolute;
-  width: 219px;
-  height: 58px;
-  left: 601px;
-  top: 5154px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 58px;
-  /* identical to box height */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.gift-comment2 {
-  position: absolute;
-  width: 383px;
-  height: 29px;
-  left: 519px;
-  top: 5232px;
-
-  font-family: "Pretendard";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  /* identical to box height */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-
-.gift-img {
-  position: absolute;
-  width: 470px;
-  height: 156px;
-  left: 230px;
-  top: 5311px;
-}
-
-.gift-img2 {
-  position: absolute;
-  width: 470px;
-  height: 156px;
-  left: 740px;
-  top: 5311px;
-}
-
-.faq {
-  position: absolute;
-  width: 59px;
-  height: 38px;
-  left: 691px;
-  top: 5665px;
-
-  font-family: Spoqa Han Sans Neo;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 38px;
-  /* identical to box height */
-
-  /* System Black 100 */
-
-  color: #000000;
-}
-.faq01 {
-  position: absolute;
-  width: 320px;
-  height: 57px;
-  left: 20px;
-  top: 5452px;
-}
-
-.faq02 {
-  position: absolute;
-  width: 320px;
-  height: 57px;
-  left: 20px;
-  top: 5529px;
-}
-
-.faq03 {
-  position: absolute;
-  width: 320px;
-  height: 138px;
-  left: 20px;
-  top: 5606px;
-}
-
-.req-bg {
-  position: absolute;
-  width: 100%;
-  height: 519px;
-  left: 0px;
-  top: 6110px;
-
-  background-size: cover;
-  background-image: url("./img/beo_bg03.png");
-}
-
-.req-comment {
-  position: absolute;
-  width: 262px;
-  height: 150px;
-  left: 230px;
-  top: 6199px;
-
-  font-family: Spoqa Han Sans Neo;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 38px;
-  line-height: 48px;
-
-  color: #211f1f;
-}
-
-.req-button {
-  position: absolute;
-  width: 222px;
-  height: 50px;
-  left: 230px;
-  top: 6379px;
-}
-
-.bottom {
-  position: absolute;
-  width: 360px;
-  height: 323px;
-  left: 0px;
-  top: 6204px;
-}
 
 /* mini */
 @media screen and (min-width: 360px) and (max-width: 1019px) {
-  /* @font-face {
-    font-family: "Spoqa Han Sans Neo";
-    src: url("./fonts/SpoqaHanSansNeo-Regular.otf");
+  .all {
+    margin: "auto",
+    
   }
-  @font-face {
-    font-family: ""Pretendard"";
-    src: url("./fonts/"Pretendard"-Regular.otf");
-  } */
-
   .bg {
     /* position: absolute; */
+    /* min-width: 360px; */
     width: 100%;
-    max-height: 100%;
+    /* min-height: 640px; */
+    height: 100%;
+    /* max-height: 100%; */
     left: 0px;
     top: 0px;
     /* display: flex; */
@@ -564,38 +29,35 @@
   }
 
   .img {
-    /* position: absolute; */
+    position: absolute;
+    left: 20px;
+    top: 80px;
     width: 126px;
-    height: 32px;
-    /* left: 20px; */
-    /* top: 80px; */
   }
 
   .img-comment {
-    /* position: absolute; */
-    width: 100%;
-    height: 38px;
-    left: 20px;
-    top: 128px;
+    position: absolute;
+            left: 20px;
+            top: 95px;
 
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
+            color:white;
+            font-Size: 32px;
+            font-Family: "Pretendard";
+            font-Weight: bold;
+            line-Height: 38px;
 
     color: #ffffff;
   }
 
   .img-comment2 {
-    /* position: absolute; */
-    width: 80%;
-    height: 38px;
+    position: absolute;
+    /* width: 80%; */
+    /* height: 38px; */
     left: 20px;
-    top: 170px;
+    top: 140px;
 
     font-family: "Pretendard";
-    font-style: normal;
+    /* font-style: normal; */
     font-weight: bold;
     font-size: 32px;
     line-height: 38px;
@@ -604,14 +66,12 @@
   }
 
   .img-comment3 {
-    /* position: absolute; */
-    width: 237px;
-    height: 17px;
+    position: absolute;
+
     left: 20px;
-    top: 216px;
+    top: 205px;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
@@ -620,15 +80,13 @@
   }
 
   .img-comment4 {
-    /* position: absolute; */
-    width: 203px;
-    height: 17px;
+    position: absolute;
+
     left: 20px;
-    top: 237px;
+    top: 225px;
 
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
+
     font-size: 14px;
     line-height: 17px;
 
@@ -643,325 +101,218 @@
   }
 
   .slider {
-    position: absolute;
-    width: 360px;
+    position: relative;
     height: 288px;
-    left: 0px;
-    top: 100%;
-    background: #beb0a7;
-  }
-  .slider-container {
-    height: 288px;
+
+    background-color: #BEB0A7;
+    text-Align: center,
   }
   .slider-text {
-    position: relative;
-    width: 113px;
-    height: 19px;
-    left: 124px;
+    position: absolute;
+    width: 100%;
     top: 60px;
+    text-align: center;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 16px;
-    line-height: 19px;
+
 
     color: #45332f;
   }
   .slider-text2 {
-    position: relative;
-    width: 287px;
-    height: 51px;
-    left: 37px;
-    top: 99px;
+    position: absolute;
+    width: 100%;
+    top: 90px;
 
-    font-family: Pretendard;
-    font-style: normal;
+    font-family: "Pretendard";
     font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
     text-align: center;
 
     color: #ffffff;
   }
   .slider-text3 {
-    position: relative;
-    width: 122px;
-    height: 14px;
-    left: 119px;
-    top: 178px;
-
-    font-family: Pretendard;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-
-    color: #000000;
-  }
-
-  .slider-text4 {
-    position: relative;
-    width: 248px;
-    height: 51px;
-    left: 416px;
-    top: 99px;
-
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-
-    color: #ffffff;
-  }
-
-  .slider-text5 {
-    position: relative;
-    width: 125px;
-    height: 14px;
-    left: 478px;
-    top: 178px;
-
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-
-    color: #000000;
-  }
-
-  .slider-text6 {
-    position: relative;
-    width: 335px;
-    height: 51px;
-    left: 733px;
-    top: 99px;
-
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-
-    color: #ffffff;
-  }
-
-  .slider-text7 {
-    position: relative;
-    width: 133px;
-    height: 14px;
-    left: 834px;
-    top: 178px;
-
-    font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-
-    color: #000000;
-  }
-
-  /* .beo {
     position: absolute;
     width: 100%;
+    top: 178px;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+
+  .beo {
+    position: relative;
+    width: 100%;
     height: 758px;
-    left: 0px;
-    top: 1312px;
-    background-color: #4d1616;
-  } */
+    text-align: center;
+  }
 
   .beo-comment {
     position: absolute;
-    width: 210px;
-    height: 19px;
-    left: 75px;
-    top: 988px;
+    width: 100%;
+    top: 60px;
 
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+
     color: #000000;
   }
 
   .beo-comment2 {
     position: absolute;
-    width: 96px;
-    height: 66px;
-    left: 132px;
-    top: 1067px;
+    width: 100%;
+    top: 139px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
-    text-align: center;
 
     color: #000000;
   }
 
   .beo-comment3 {
     position: absolute;
-    width: 290px;
-    height: 44px;
-    left: 36px;
-    top: 1157px;
+    width: 100%;
+    top: 229px;
     white-space: pre-wrap;
-
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
-    line-height: 22px;
-    /* or 147% */
 
     color: #000000;
   }
 
   .beo-img {
     position: absolute;
-    width: 270px;
+    width: 100%;
     height: 484.9px;
-    left: 45px;
-    top: 1201px;
+    top: 273px;
+  }
+
+  .beo2{
+    position: relative;
+    width: 100%;
+    height: 537px;
+    text-align: center;
   }
 
   .beo-comment4 {
     position: absolute;
-    width: 25.8%;
-    height: 66px;
-    left: 132px;
-    top: 1786px;
+    width: 100%;
+    top: 100px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
     text-align: center;
   }
 
   .beo-comment5 {
     position: absolute;
-    width: 227px;
-    height: 44px;
-    left: 63px;
-    top: 1876px;
+    width: 100%;
+    top: 190px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
-    line-height: 22px;
-    /* or 147% */
-
-    text-align: center;
 
     color: #000000;
   }
 
   .beo-img2 {
     position: absolute;
-    width: 256px;
-    height: 129px;
-    left: 52px;
-    top: 1990px;
+    width: 100%;
+    top: 279px;
+  }
+
+  .beo3{
+    position: relative;
+    width: 100%;
+    height: 598px;
+    text-align: center;
   }
 
   .beo-comment6 {
     position: absolute;
-    width: 37.8%;
-    height: 66px;
-    left: 107px;
-    top: 2323px;
+    width: 100%;
+    top: 100px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
-    text-align: center;
 
     color: #000000;
   }
 
   .beo-comment7 {
     position: absolute;
-    width: 320px;
-    height: 44px;
-    left: 20px;
-    top: 2413px;
+    width: 100%;
+    top: 190px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
     font-size: 15px;
-    line-height: 22px;
-    /* or 147% */
-
-    text-align: center;
 
     color: #000000;
   }
 
+  .beo-imgs{
+    text-align: center;
+    width: 100%;
+  }
+
   .beo-chatimg {
     position: absolute;
-    width: 275px;
-    height: 56px;
-    left: 20px;
-    top: 2502px;
+    width: 100%;
+    right: 20px;
+    top: 279px;
   }
   .beo-chatimg2 {
     position: absolute;
-    width: 57px;
-    height: 36px;
-    left: 283px;
-    top: 2573px;
+    text-align: right;
+    width: 100%;
+    right: 50px;
+    top: 350px;
   }
   .beo-chatimg3 {
     position: absolute;
-    width: 298px;
-    height: 74px;
-    left: 20px;
-    top: 2626px;
+    width: 100%;
+    right: 10px;
+    top: 403px;
   }
   .beo-chatimg4 {
     position: absolute;
-    width: 48px;
-    height: 36px;
-    left: 292px;
-    top: 2715px;
+    text-align: right;
+    width: 100%;
+    right: 50px;
+    top: 492px;
+  }
+
+  .beo4{
+    position: relative;
+    width: 100%;
+    height: 768px;
+    text-align: center;
   }
 
   .beo-comment8 {
     position: absolute;
-    width: 42.8%;
-    height: 126px;
-    left: 95px;
-    top: 2881px;
+    width: 100%;
+    top: 60px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 30px;
-    line-height: 42px;
     /* or 140% */
 
     text-align: center;
@@ -971,230 +322,208 @@
 
   .beo-img3 {
     position: absolute;
-    width: 270px;
-    height: 484.9px;
-    left: 45px;
-    top: 3022px;
+    width: 100%;
+    top: 201px;
   }
 
-  .bg.color {
-    position: absolute;
-    width: 360px;
-    height: 1270px;
-    left: 0px;
-    top: 3589px;
 
-    background: #fffaf5;
+  .beo5{
+    position: relative;
+    width: 100%;
+    height: 1270px;
+    text-align: center;
+    background-color: #FFFAF5;
   }
 
   .review-comment {
     position: absolute;
-    width: 132px;
-    height: 24px;
-    left: 115px;
-    top: 3649px;
+    width: 100%;
+    top: 40px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 20px;
-    line-height: 24px;
-    /* identical to box height */
-
-    text-align: center;
-
     color: #49382e;
   }
 
   .review-comment2 {
     position: absolute;
-    width: 170px;
-    height: 44px;
-    left: 96px;
-    top: 3685px;
+    width: 100%;
+    top: 96px;
     white-space: pre-wrap;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+
 
     color: #49382e;
   }
 
   .review-img {
     position: absolute;
-    width: 320px;
-    height: 250px;
-    left: 20px;
-    top: 3769px;
+    width: 100%;
+    top: 180px;
   }
 
   .review-img2 {
     position: absolute;
-    width: 320px;
-    height: 253px;
-    left: 20px;
-    top: 4039px;
+    width: 100%;
+    top: 450px;
   }
 
   .review-img3 {
     position: absolute;
-    width: 320px;
-    height: 230px;
-    left: 20px;
-    top: 4312px;
+    width: 100%;
+    top: 723px;
   }
 
   .review-img4 {
     position: absolute;
-    width: 320px;
-    height: 227px;
-    left: 20px;
-    top: 4562px;
+    width: 100%;
+    top: 973px;
+  }
+
+  .beo6{
+    position: relative;
+    width: 100%;
+    height: 475px;
+    text-align: center;
   }
 
   .gift-comment {
     position: absolute;
-    width: 119px;
-    height: 31px;
-    left: 119px;
-    top: 4943px;
+    width: 100%;
+    top: 70px;
 
     font-family: "Pretendard";
-    font-style: normal;
     font-weight: bold;
     font-size: 26px;
-    line-height: 31px;
 
     color: #000000;
   }
 
   .gift-comment2 {
     position: absolute;
-    width: 240px;
-    height: 18px;
-    left: 60px;
-    top: 4991px;
+    width: 100%;
+    top: 132px;
 
     font-family: "Pretendard";
-    font-style: normal;
-    font-weight: normal;
+
+    font-weight: bold;
     font-size: 15px;
-    line-height: 18px;
-    /* identical to box height */
+
 
     color: #000000;
   }
 
   .gift-img {
     position: absolute;
-    width: 320px;
-    height: 106px;
-    left: 20px;
-    top: 5047px;
+    width: 100%;
+    top: 208px;
   }
 
   .gift-img2 {
     position: absolute;
-    width: 320px;
-    height: 106px;
-    left: 20px;
-    top: 5168px;
+    width: 100%;
+    top: 329px;
+  }
+
+  .beo7{
+    position: relative;
+    width: 100%;
+    height: 495px;
+    text-align: center;
   }
 
   .faq {
     position: absolute;
-    width: 43px;
-    height: 28px;
-    left: 159px;
-    top: 5374px;
+    width: 100%;
+    top: 70px;
 
-    font-family: Spoqa Han Sans Neo;
-    font-style: normal;
+    font-family: "Spoqa Han Sans Neo";
     font-weight: bold;
     font-size: 22px;
-    line-height: 28px;
-    /* identical to box height */
 
     color: #000000;
   }
-  .faq01 {
+
+  .faq-menu{
     position: absolute;
-    width: 320px;
-    height: 57px;
-    left: 20px;
-    top: 5452px;
+    width: 100%;
+    top: 150px;
+    text-align: center;
   }
 
-  .faq02 {
-    position: absolute;
-    width: 320px;
-    height: 57px;
-    left: 20px;
-    top: 5529px;
+
+
+  .faq-menu2 {
+    
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  
   }
 
-  .faq03 {
-    position: absolute;
-    width: 320px;
-    height: 138px;
-    left: 20px;
-    top: 5606px;
+  .beo8{
+    position: relative;
+    width: 100%;
+    height: 266px;
+    text-align: center;
   }
+  
 
   .req-bg {
     position: absolute;
     width: 100%;
-    height: 400px;
-    left: 0px;
-    top: 5804px;
-
-    background-size: cover;
-    background-image: url("./img/beo_bg01.png");
   }
 
   .req-comment {
     position: absolute;
-    width: 152px;
+    width: 100%;
     height: 90px;
-    left: 104px;
-    top: 5834px;
+    top: 5px;
 
-    font-family: Spoqa Han Sans Neo;
-    font-style: normal;
-    font-weight: bold;
+    white-space: pre-wrap;
+    font-family: 'Spoqa Han Sans Neo';
     font-size: 22px;
-    line-height: 28px;
+
 
     color: #211f1f;
   }
 
   .req-button {
     position: absolute;
-    width: 159px;
-    height: 37px;
-    left: 101px;
-    top: 5938px;
+    width: 100%;
+    top: 134px;
+  }
+
+  .beo9{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    text-align: center;
   }
 
   .bottom {
     position: absolute;
-    width: 360px;
-    height: 323px;
-    left: 0px;
-    top: 6204px;
+    width: 100%;
+    top: 194px;
+  }
+
+  .beo10{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    text-align: center;
   }
 
   .bottom-button {
     position: absolute;
-    width: 320px;
-    height: 50px;
-    left: 20px;
-    top: 6567px;
+    width: 100%;
+    height: 70px;
+    top: 330px;
   }
 
   .bottom-40 {
@@ -1206,64 +535,86 @@
   }
 }
 
+/*middle*/
 @media screen and (min-width: 1020px) and (max-width: 1439px) {
   .all {
-    align-items: center;
+    margin: "auto",
   }
   .bg {
+    /* position: absolute; */
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     left: 0px;
     top: 0px;
     /* display: flex; */
 
-    background-size: cover;
     background-image: url("./img/main_image2.png");
+    background-size: cover;
   }
 
   .img {
-    width: 164px;
-    height: 38px;
+    position: absolute;
+    left: 20px;
+    top: 80px;
+    width: 126px;
   }
 
   .img-comment {
-    width: 349px;
-    height: 53px;
-    left: 20px;
-    top: 148px;
+    position: absolute;
+            left: 20px;
+            top: 100px;
 
-    font-size: 44px;
-    line-height: 53px;
+            color:white;
+            font-Size: 44px;
+            font-Family: "Pretendard";
+            font-Weight: bold;
+            line-Height: 53px;
+
+    color: #ffffff;
   }
 
   .img-comment2 {
-    width: 311px;
-    height: 53px;
+    position: absolute;
+    /* width: 80%; */
+    /* height: 38px; */
     left: 20px;
-    top: 209px;
+    top: 160px;
 
+    font-family: "Pretendard";
+    /* font-style: normal; */
+    font-weight: bold;
     font-size: 44px;
     line-height: 53px;
+
+    color: #ffffff;
   }
 
   .img-comment3 {
-    width: 305px;
-    height: 22px;
-    left: 20px;
-    top: 287px;
+    position: absolute;
 
+    left: 20px;
+    top: 260px;
+
+    font-family: "Pretendard";
+    font-weight: normal;
     font-size: 18px;
     line-height: 22px;
+
+    color: #ffffff;
   }
 
   .img-comment4 {
-    width: 261px;
-    height: 22px;
+    position: absolute;
+
     left: 20px;
-    top: 317px;
+    top: 288px;
+
+    font-family: "Pretendard";
 
     font-size: 18px;
     line-height: 22px;
+
+    color: #ffffff;
   }
   .img-button {
     position: absolute;
@@ -1273,214 +624,428 @@
     top: 732px;
   }
 
-  .slide {
-    width: 1020px;
+  .slider {
+    position: relative;
     height: 288px;
-    left: 0px;
-    top: 100%;
+
+    background-color: #BEB0A7;
+    text-Align: center,
+  }
+  .slider-text {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 16px;
+
+
+    color: #45332f;
+  }
+  .slider-text2 {
+    position: absolute;
+    width: 100%;
+    top: 90px;
+
+    font-family: Pretendard;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .slider-text3 {
+    position: absolute;
+    width: 100%;
+    top: 178px;
+
+    font-family: Pretendard;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+
+  .beo {
+    position: relative;
+    width: 100%;
+    height: 758px;
+    text-align: center;
   }
 
   .beo-comment {
-    left: 405px;
-    top: 1372px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+
+    font-family: "Pretendard";
+    font-size: 16px;
+
+    color: #000000;
   }
 
   .beo-comment2 {
-    width: 96px;
-    height: 66px;
-    left: 462px;
-    top: 1451px;
+    position: absolute;
+    width: 100%;
+    top: 139px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 26px;
+
+    color: #000000;
   }
 
   .beo-comment3 {
-    width: 289px;
-    height: 44px;
-    left: 366px;
-    top: 1541px;
+    position: absolute;
+    width: 100%;
+    top: 229px;
+    white-space: pre-wrap;
+    font-family: "Pretendard";
+    font-size: 15px;
+
+    color: #000000;
   }
 
   .beo-img {
-    left: 375px;
-    top: 1585px;
+    position: absolute;
+    width: 100%;
+    height: 484.9px;
+    top: 273px;
+  }
+
+  .beo2{
+    position: relative;
+    width: 100%;
+    height: 537px;
+    text-align: center;
   }
 
   .beo-comment4 {
-    left: 462px;
-    top: 2170px;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 26px;
+    text-align: center;
   }
 
   .beo-comment5 {
-    left: 393px;
-    top: 2260px;
+    position: absolute;
+    width: 100%;
+    top: 190px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 15px;
+
+    color: #000000;
   }
 
   .beo-img2 {
     position: absolute;
-    width: 256px;
-    height: 178px;
-    left: 382px;
-    top: 2349px;
+    width: 100%;
+    top: 279px;
+  }
+
+  .beo3{
+    position: relative;
+    width: 100%;
+    height: 598px;
+    text-align: center;
   }
 
   .beo-comment6 {
-    left: 437px;
-    top: 2707px;
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 26px;
+
+    color: #000000;
   }
 
   .beo-comment7 {
-    left: 350px;
-    top: 2797px;
+    position: absolute;
+    width: 100%;
+    top: 190px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-size: 15px;
+
+    color: #000000;
+  }
+
+  .beo-imgs{
+    text-align: center;
+    width: 100%;
   }
 
   .beo-chatimg {
-    left: 350px;
-    top: 2886px;
+    position: absolute;
+    width: 100%;
+    right: 20px;
+    top: 279px;
   }
   .beo-chatimg2 {
-    left: 613px;
-    top: 2957px;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    right: 360px;
+    top: 350px;
   }
   .beo-chatimg3 {
-    left: 350px;
-    top: 3010px;
+    position: absolute;
+    width: 100%;
+    right: 10px;
+    top: 403px;
   }
   .beo-chatimg4 {
-    left: 622px;
-    top: 3099px;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+    right: 360px;
+    top: 492px;
+  }
+
+  .beo4{
+    position: relative;
+    width: 100%;
+    height: 768px;
+    text-align: center;
   }
 
   .beo-comment8 {
-    left: 425px;
-    top: 3286px;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 30px;
+    /* or 140% */
+
+    text-align: center;
+
+    color: #000000;
   }
 
   .beo-img3 {
-    left: 375px;
-    top: 3427px;
+    position: absolute;
+    width: 100%;
+    top: 201px;
   }
 
-  .bg.color {
-    position: absolute;
-    width: 360px;
-    height: 1270px;
-    left: 0px;
-    top: 3589px;
 
-    background: #fffaf5;
+  .beo5{
+    position: relative;
+    width: 100%;
+    height: 1270px;
+    text-align: center;
+    background-color: #FFFAF5;
   }
 
   .review-comment {
-    left: 445px;
-    top: 4054px;
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 20px;
+    color: #49382e;
   }
 
   .review-comment2 {
-    left: 426px;
-    top: 4090px;
+    position: absolute;
+    width: 100%;
+    top: 96px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 18px;
+
+
+    color: #49382e;
   }
 
   .review-img {
-    left: 350px;
-    top: 4174px;
+    position: absolute;
+    width: 100%;
+    top: 180px;
   }
 
   .review-img2 {
-    left: 350px;
-    top: 4694px;
+    position: absolute;
+    width: 100%;
+    top: 450px;
   }
 
   .review-img3 {
-    left: 350px;
-    top: 4444px;
+    position: absolute;
+    width: 100%;
+    top: 723px;
   }
 
   .review-img4 {
-    left: 350px;
-    top: 4967px;
+    position: absolute;
+    width: 100%;
+    top: 973px;
+  }
+
+  .beo6{
+    position: relative;
+    width: 100%;
+    height: 475px;
+    text-align: center;
   }
 
   .gift-comment {
-    left: 449px;
-    top: 5348px;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 26px;
+
+    color: #000000;
   }
 
   .gift-comment2 {
-    left: 390px;
-    top: 5396px;
+    position: absolute;
+    width: 100%;
+    top: 132px;
+
+    font-family: "Pretendard";
+
+    font-weight: bold;
+    font-size: 15px;
+
+
+    color: #000000;
   }
 
   .gift-img {
-    left: 350px;
-    top: 5452px;
+    position: absolute;
+    width: 100%;
+    top: 208px;
   }
 
   .gift-img2 {
-    left: 350px;
-    top: 5573px;
+    position: absolute;
+    width: 100%;
+    top: 329px;
+  }
+
+  .beo7{
+    position: relative;
+    width: 100%;
+    height: 495px;
+    text-align: center;
   }
 
   .faq {
-    left: 489px;
-    top: 5779px;
-  }
-  .faq01 {
     position: absolute;
-    width: 320px;
-    height: 57px;
-    left: 20px;
-    top: 5452px;
+    width: 100%;
+    top: 70px;
+
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: bold;
+    font-size: 22px;
+
+    color: #000000;
+  }
+  .faq-menu{
+    position: absolute;
+    width: 100%;
+    top: 150px;
+    text-align: center;
   }
 
-  .faq02 {
-    position: absolute;
-    width: 980px;
-    height: 57px;
-    left: 20px;
-    top: 6020px;
+  .faq-menu2 {
+    /* position: absolute; */
+    /* top: 200px; */
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  
   }
 
-  .faq03 {
-    position: absolute;
-    width: 980px;
-    height: 57px;
-    left: 20px;
-    top: 6097px;
+  .beo8{
+    position: relative;
+    width: 100%;
+    height: 266px;
+    text-align: center;
   }
+  
 
   .req-bg {
-    width: 1020px;
-    height: 400px;
-    left: 0px;
-    top: 6214px;
-    background-image: url("./img/beo_bg02.png");
+    position: absolute;
+    width: 100%;
   }
 
   .req-comment {
-    width: 152px;
+    position: absolute;
+    width: 100%;
     height: 90px;
-    left: 434px;
-    top: 6244px;
+    top: 5px;
+
+    white-space: pre-wrap;
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 22px;
+
+
+    color: #211f1f;
   }
 
   .req-button {
-    left: 431px;
-    top: 6348px;
+    position: absolute;
+    width: 100%;
+    top: 134px;
+  }
+
+  .beo9{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    text-align: center;
   }
 
   .bottom {
     position: absolute;
-    width: 1020px;
-    height: 323px;
-    left: 0px;
-    top: 6614px;
+    width: 100%;
+    top: 194px;
+  }
+
+  .beo10{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    text-align: center;
   }
 
   .bottom-button {
     position: absolute;
-    width: 950px;
-    height: 50px;
-    left: 35px;
-    top: 6963px;
+    width: 100%;
+    height: 70px;
+    top: 330px;
   }
 
   .bottom-40 {
@@ -1488,6 +1053,558 @@
     width: 320px;
     height: 50px;
     left: 20px;
-    top: 7003px;
+    top: 6607px;
   }
+}
+
+@media screen and (min-width: 1440px)  {
+  .all {
+    margin: "auto",
+  }
+  .bg {
+    /* position: absolute; */
+    width: 100%;
+    /* max-height: 100%; */
+    left: 0px;
+    top: 0px;
+    /* display: flex; */
+
+
+  }
+
+  .img {
+    position: absolute;
+    left: 227px;
+    top: 199px;
+    width: 126px;
+  }
+
+  .img-comment {
+    position: absolute;
+            left: 227px;
+            top: 267px;
+
+            color:white;
+            font-Size: 44px;
+            font-Family: "Pretendard";
+            font-Weight: bold;
+            line-Height: 53px;
+
+    color: #ffffff;
+  }
+
+  .img-comment2 {
+    position: absolute;
+    /* width: 80%; */
+    /* height: 38px; */
+    left: 227px;
+    top: 324px;
+
+    font-family: "Pretendard";
+    /* font-style: normal; */
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 53px;
+
+    color: #ffffff;
+  }
+
+  .img-comment3 {
+    position: absolute;
+
+    left: 227px;
+    top: 432px;
+
+    font-family: "Pretendard";
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+
+  .img-comment4 {
+    position: absolute;
+
+    left: 227px;
+    top: 464px;
+
+    font-family: "Pretendard";
+
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #ffffff;
+  }
+  .img-button {
+    position: absolute;
+    width: 335px;
+    height: 50px;
+    left: 20px;
+    top: 732px;
+  }
+
+  .slider {
+    position: relative;
+    height: 288px;
+
+    background-color: #BEB0A7;
+    text-Align: center,
+  }
+  .slider-text {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    text-align: center;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 16px;
+
+
+    color: #45332f;
+  }
+  .slider-text2 {
+    position: absolute;
+    width: 100%;
+    top: 90px;
+
+    font-family: Pretendard;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .slider-text3 {
+    position: absolute;
+    width: 100%;
+    top: 178px;
+
+    font-family: Pretendard;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+
+    color: #000000;
+  }
+
+
+  .beo {
+    position: relative;
+    width: 1440px;
+    height: 900px;
+    /* text-align: center; */
+  }
+
+  .beo-comment {
+    position: absolute;
+    /* width: 100%; */
+    top: 80px;
+    left: 230px;
+    /* left: 230px; */
+    /* text-align: left; */
+    font-family: "Pretendard";
+    font-size: 24px;
+
+    color: #000000;
+  }
+
+  .beo-comment2 {
+    position: absolute;
+    /* width: 100%; */
+    left: 230px;
+    top: 353px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 40px;
+
+    color: #000000;
+  }
+
+  .beo-comment3 {
+    position: absolute;
+    left: 230px;
+    top: 500px;
+    white-space: pre-wrap;
+    font-family: "Pretendard";
+    font-size: 20px;
+
+    color: #000000;
+  }
+
+  .beo-img {
+    position: absolute;
+    width: 490px;
+    height: 880px;
+left: 720px;
+top: 80px;
+  }
+
+  .beo2{
+    position: relative;
+    width: 1440px;
+    height: 520px;
+    /* text-align: center; */
+  }
+
+  .beo-comment4 {
+    position: absolute;
+    /* width: 100%; */
+    left: 800px;
+    top: 100px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+  }
+
+  .beo-comment5 {
+    position: absolute;
+    /* width: 100%; */
+    left: 800px;
+    top: 250px;
+    white-space: pre-wrap;
+    text-align: left;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 20px;
+
+    color: #000000;
+  }
+
+  .beo-img2 {
+    position: absolute;
+    /* width: 100%; */
+    left: 230px;
+    top: 145px;
+  }
+
+  
+
+  .beo3{
+    position: relative;
+    width: 1440px;
+    height: 520px;
+    /* text-align: center; */
+  }
+
+  .beo-comment6 {
+    position: absolute;
+    left: 170px;
+    top: 230px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 40px;
+
+    color: #000000;
+  }
+
+  .beo-comment7 {
+    position: absolute;
+    left: 170px;
+    top: 390px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-size: 20px;
+
+    color: #000000;
+  }
+
+  .beo-imgs{
+    text-align: right;
+    width: 100%;
+  }
+
+  .beo-chatimg {
+    position: absolute;
+    width: 292px;
+    height: 59px;
+    right: 370px;
+    top: 279px;
+  }
+  .beo-chatimg2 {
+    position: absolute;
+
+    width: 61px;
+    height: 39px;
+    right: 260px;
+    top: 350px;
+  }
+  .beo-chatimg3 {
+    position: absolute;
+    width: 330px;
+height: 81px;
+    right: 350px;
+    top: 403px;
+  }
+  .beo-chatimg4 {
+    position: absolute;
+    text-align: right;
+    width: 51px;
+    height: 38px;
+    right: 260px;
+    top: 492px;
+  }
+
+  .beo4{
+    position: relative;
+    width: 1440px;
+    height: 980px;
+    text-align: center;
+  }
+
+  .beo-comment8 {
+    position: absolute;
+left: 800px;
+    top: 280px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 48px;
+    /* or 140% */
+
+    text-align: center;
+
+    color: #000000;
+  }
+
+  .beo-img3 {
+    position: absolute;
+    width: 490px;
+    height: 880px;
+    left: 230px;
+    top: 140px;
+  }
+
+
+  .beo5{
+    position: relative;
+    width: 1440px;
+    height: 739px;
+    /* text-align: center; */
+    background-color: #FFFAF5;
+  }
+
+  .review-comment {
+    position: absolute;
+    left: 231px;
+    top: 100px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 28px;
+    color: #49382e;
+  }
+
+  .review-comment2 {
+    position: absolute;
+    left: 231px;
+    top: 154px;
+    white-space: pre-wrap;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 24px;
+
+
+    color: #49382e;
+  }
+
+  .review-img {
+    position: absolute;
+    width: 320px;
+height: 287px;
+left: 540px;
+    top: 180px;
+  }
+
+  .review-img2 {
+    position: absolute;
+    width: 320px;
+height: 287px;
+left: 890px;
+    top: 200px;
+  }
+
+  .review-img3 {
+    position: absolute;
+    width: 320px;
+height: 267px;
+left: 540px;
+    top: 450px;
+  }
+
+  .review-img4 {
+    position: absolute;
+    width: 320px;
+    height: 257px;
+    left: 890px;
+    top: 480px;
+  }
+
+  .beo6{
+    position: relative;
+    width: 1440px;
+    height: 555px;
+
+  }
+
+  .gift-comment {
+    position: absolute;
+    /* width: 219px; */
+height: 58px;
+left: 601px;
+    top: 100px;
+
+    font-family: "Pretendard";
+    font-weight: bold;
+    font-size: 48px;
+
+    color: #000000;
+  }
+
+  .gift-comment2 {
+    position: absolute;
+    left: 519px;
+    top: 220px;
+
+    font-family: "Pretendard";
+    font-size: 24px;
+
+
+    color: #000000;
+  }
+
+  .gift-img {
+    position: absolute;
+    width: 470px;
+height: 156px;
+left: 230px;
+    top: 400px;
+  }
+
+  .gift-img2 {
+    position: absolute;
+    width: 470px;
+height: 156px;
+left: 740px;
+    top: 400px;
+  }
+
+  .beo7{
+    position: relative;
+    width: 1440px;
+    height: 495px;
+    text-align: center;
+  }
+
+  .faq {
+    position: absolute;
+    width: 1440px;
+    top: 70px;
+
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: bold;
+    font-size: 30px;
+
+    color: #000000;
+  }
+  .faq-menu{
+    position: absolute;
+    width: 1440px;
+    top: 150px;
+    text-align: center;
+  }
+
+  .faq-menu2 {
+    /* position: absolute; */
+    /* top: 200px; */
+    margin: auto;
+    width: 70%;
+    text-align: center;
+  
+  }
+
+  .beo8{
+    position: relative;
+    width: 100%;
+    height: 266px;
+    /* text-align: center; */
+  }
+  
+
+  .req-bg {
+    position: absolute;
+    height: 400px;
+    width: 100%;
+  }
+
+  .req-comment {
+    position: absolute;
+    width: 262px;
+height: 150px;
+left: 230px;
+    top: 5px;
+
+    white-space: pre-wrap;
+    font-family: 'Spoqa Han Sans Neo';
+    font-size: 38px;
+    font-weight: bold;
+
+    color: #211f1f;
+  }
+
+  .req-button {
+    position: absolute;
+    width: 222px;
+height: 50px;
+left: 230px;
+    top: 269px;
+  }
+
+  .beo9{
+    position: relative;
+    width: 100%;
+    height: 340px;
+    text-align: center;
+  }
+
+  .bottom {
+    position: absolute;
+    width: 100%;
+    top: 194px;
+  }
+
+  .beo10{
+    position: relative;
+    width: 100%;
+    height: 170px;
+    text-align: center;
+  }
+
+  /* .bottom-button {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    top: 330px;
+  }
+
+  .bottom-40 {
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: 20px;
+    top: 6607px;
+  } */
 }

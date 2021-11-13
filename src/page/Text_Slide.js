@@ -1,6 +1,7 @@
 import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@mui/material";
+import "./MainApp.css";
 
 function Example(props) {
   var items = [
@@ -35,7 +36,7 @@ function Example(props) {
 
 function Item(props) {
   return (
-    <Paper
+    <Paper className='slider'
       style={{
         position: "relative",
         height: "288px",
@@ -43,45 +44,19 @@ function Item(props) {
         textAlign: "center",
       }}
     >
-      <p
-        style={{
-          position: "absolute",
-          // height: "288px",
-          top: "60px",
-          width: "100%",
-          textAlign: "center",
-          fontSize: "16px",
-          fontFamily: "Pretendard",
-          fontWeight: "bold",
-          color: "#45332F",
-        }}
+      <p className='slider-text'
+
       >
         {props.item.title}
       </p>
-      <p
-        style={{
-          position: "absolute",
-          top: "90px",
-          width: "100%",
-          fontSize: "20px",
-          fontFamily: "Pretendard",
-          fontWeight: "bold",
-          color: "#FFFFFF",
-        }}
+      <p className='slider-text2'
+
+  
       >
         {props.item.description}
       </p>
-      <p
-        style={{
-          position: "absolute",
-          top: "178px",
-          textAlign: "center",
-          width: "100%",
-          fontSize: "12px",
-          fontFamily: "Pretendard",
-          fontWeight: "bold",
-          color: "#000000",
-        }}
+      <p className='slider-text3'
+   
       >
         {props.item.name}
       </p>
