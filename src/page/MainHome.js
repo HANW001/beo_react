@@ -404,7 +404,7 @@ const Index = () => {
         >
 
 <picture>
-            
+<source media="(min-width:1020px)" srcSet="/img/beo_bg02.png" />
             <source media="(min-width:1440px)" srcSet="img/beo_bg03.png" />
             <img src="img/beo_bg01.png" style={{width: "100%"}}  />
           </picture>
