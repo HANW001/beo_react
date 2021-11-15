@@ -4,8 +4,14 @@ import "aos/dist/aos.css";
 import "./MainApp.css";
 import Sliders from "./Text_Slide";
 import Accordion from "./Accordion";
-import { Fab } from '@material-ui/core';
-import { display, fontFamily, fontWeight, height, textAlign } from "@mui/system";
+import { Fab } from "@material-ui/core";
+import {
+  display,
+  fontFamily,
+  fontWeight,
+  height,
+  textAlign,
+} from "@mui/system";
 import zIndex from "@mui/material/styles/zIndex";
 
 const Index = () => {
@@ -26,10 +32,10 @@ const Index = () => {
   const req_comment = "베오와 함께라면\n당신의 기념일이\n새로워질 거예요";
   const [scrollPosition, setScrollPosition] = useState(0);
   const updateScroll = () => {
-      setScrollPosition(window.scrollY || document.documentElement.scrollTop);
-  }
+    setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  };
   useEffect(() => {
-    window.addEventListener('scroll', updateScroll);
+    window.addEventListener("scroll", updateScroll);
     AOS.init({
       duration: 1000,
     });
@@ -37,38 +43,47 @@ const Index = () => {
 
   const Header = () => {
     return (
-      <header  className={scrollPosition < 500 ? "original_header" : "change_header"}>
-        
+      <header
+        className={scrollPosition < 500 ? "original_header" : "change_header"}
+      >
         <ul>
-          <li style={{position:'absolute', left:'10vw', display:'flex'}} >
-          <img  src="/img/beo_logo.png"/>
-        </li >
-        <li style={{position:'absolute',left:'80vw', display:'flex'}}>로그인</li>
+          <li style={{ position: "absolute", left: "10vw", display: "flex" }}>
+            <img src="/img/beo_logo.png" />
+          </li>
+          <li style={{ position: "absolute", left: "80vw", display: "flex" }}>
+            로그인
+          </li>
         </ul>
       </header>
-    )
-  }
+    );
+  };
 
   const Footer = () => {
     return (
-      <div className={scrollPosition < 50 ? "original_footer" : "change_footer"}>
- <div  className='footer-button'>
-
- <picture>
-          <source media="(min-width:1020px)" srcSet="/img/gift_button_02.png" />
-          <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
-          <img src="./img/gift_button.png" style={{ width:'80%', height:'50px'}} />
-        </picture>
-     {/* <img  src="./img/gift_button.png" width='80%' height='50px' /> */}
-   </div>
-   </div>
-    )
-  }
+      <div
+        className={scrollPosition < 50 ? "original_footer" : "change_footer"}
+      >
+        <div className="footer-button">
+          <picture>
+            <source
+              media="(min-width:1020px)"
+              srcSet="/img/gift_button_02.png"
+            />
+            <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
+            <img
+              src="./img/gift_button.png"
+              style={{ width: "80%", height: "50px" }}
+            />
+          </picture>
+          {/* <img  src="./img/gift_button.png" width='80%' height='50px' /> */}
+        </div>
+      </div>
+    );
+  };
 
   return (
- 
     <div className="all">
-<Header/>
+      <Header />
 
       <div
         style={{
@@ -82,7 +97,10 @@ const Index = () => {
         <picture>
           <source media="(min-width:1020px)" srcSet="./img/main_image2.png" />
           <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
-          <img src="img/main_image.png" style={{ width: "100%" , height: "100%"}} />
+          <img
+            src="img/main_image.png"
+            style={{ width: "100%", height: "100%" }}
+          />
         </picture>
 
         <div className="img" data-aos="fade-up" aos-easing="ease-in-sine">
@@ -296,7 +314,10 @@ const Index = () => {
           <picture>
             <source media="(min-width:1020px)" srcSet="/img/beo_bg02.png" />
             <source media="(min-width:1440px)" srcSet="img/beo_bg03.png" />
-            <img src="img/beo_bg01.png" style={{ width: "100%",  height: "400px" }} />
+            <img
+              src="img/beo_bg01.png"
+              style={{ width: "100%", height: "400px" }}
+            />
           </picture>
         </div>
 
@@ -313,7 +334,7 @@ const Index = () => {
       </div>
 
       <div className="beo9">
-        <div className="bottom" >
+        <div className="bottom">
           <picture>
             <source
               media="(min-width:1020px)"
@@ -323,7 +344,10 @@ const Index = () => {
               media="(min-width:1440px)"
               srcSet="/img/beo_bottom_03.png"
             />
-            <img src="/img/beo_bottom.png" style={{ width: "100%",height:"340px" }} />
+            <img
+              src="/img/beo_bottom.png"
+              style={{ width: "100%", height: "340px" }}
+            />
           </picture>
         </div>
       </div>
@@ -339,18 +363,20 @@ const Index = () => {
         </div>
       </div> */}
 
-
       <div className="beo10">
         <div className="bottom-button">
           <picture>
             <source media="(min-width:360)" srcSet="./img/gift_button.png" />
-            <source media="(min-width:1020px )" srcSet="/img/gift_button_02.png" />
+            <source
+              media="(min-width:1020px )"
+              srcSet="/img/gift_button_02.png"
+            />
             <source media="(min-width:1440px)" />
             <img src="./img/gift_button.png" />
           </picture>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
