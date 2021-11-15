@@ -2,6 +2,7 @@ import React from "react";
 import Carousel from "react-material-ui-carousel";
 import { Paper } from "@mui/material";
 import "./MainApp.css";
+import { style } from "@mui/system";
 
 function Example(props) {
   var items = [
@@ -10,6 +11,7 @@ function Example(props) {
       description:
         "뭘 좋아할지 몰라 네**, 인***램에서 몇 시간을 허비했는지 몰라요",
       name: "30대 서울 직장인 김*성님",
+      
     },
     {
       title: "",
@@ -26,7 +28,34 @@ function Example(props) {
   ];
 
   return (
-    <Carousel PrevIcon={false} NextIcon={false}>
+    <Carousel  animation='slide' navButtonsAlwaysInvisible={true}   
+    indicatorIconButtonProps={{
+      style: {
+        fontSize:'3px',
+          padding: '5px',    // 1
+          color: "#FFFFFF",
+         // 3
+      }
+  }}
+ 
+  activeIndicatorIconButtonProps={{
+    style: {
+      color: "#EC5800",
+      fontSize:'3px', // 2
+    }
+}}
+    indicatorContainerProps={{
+      style: {
+        position: "absolute",
+        top:'230px',
+        fontSize:'3px',
+          marginTop: '0px', // 5
+          textAlign: 'center' ,
+          zIndex:'1'
+          // 4
+      }
+
+  }} >
       {items.map((item, i) => (
         <Item key={i} item={item} />
       ))}

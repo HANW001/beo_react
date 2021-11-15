@@ -4,7 +4,9 @@ import "aos/dist/aos.css";
 import "./MainApp.css";
 import Sliders from "./Text_Slide";
 import Accordion from "./Accordion";
-import { fontFamily, fontWeight, height, textAlign } from "@mui/system";
+import { Fab } from '@material-ui/core';
+import { display, fontFamily, fontWeight, height, textAlign } from "@mui/system";
+import zIndex from "@mui/material/styles/zIndex";
 
 const Index = () => {
   const beo_comment = "1분\n선물 추천";
@@ -22,183 +24,138 @@ const Index = () => {
   const review_comment2 = "베오 덕에\n행복한 시간을 보냈어요.";
 
   const req_comment = "베오와 함께라면\n당신의 기념일이\n새로워질 거예요";
-
-
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const updateScroll = () => {
+      setScrollPosition(window.scrollY || document.documentElement.scrollTop);
+  }
   useEffect(() => {
+    window.addEventListener('scroll', updateScroll);
     AOS.init({
       duration: 1000,
     });
   });
 
+  const Header = () => {
+    return (
+      <header  className={scrollPosition < 500 ? "original_header" : "change_header"}>
+        
+        <ul>
+          <li style={{position:'absolute', left:'10vw', display:'flex'}} >
+          <img  src="/img/beo_logo.png"/>
+        </li >
+        <li style={{position:'absolute',left:'80vw', display:'flex'}}>로그인</li>
+        </ul>
+      </header>
+    )
+  }
+
+  const Footer = () => {
+    return (
+      <div className={scrollPosition < 50 ? "original_footer" : "change_footer"}>
+ <div  className='footer-button'>
+
+ <picture>
+          <source media="(min-width:1020px)" srcSet="/img/gift_button_02.png" />
+          <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
+          <img src="./img/gift_button.png" style={{ width:'80%', height:'50px'}} />
+        </picture>
+     {/* <img  src="./img/gift_button.png" width='80%' height='50px' /> */}
+   </div>
+   </div>
+    )
+  }
+
   return (
-    <div
-      className="all"
-    >
+ 
+    <div className="all">
+<Header/>
+
       <div
-        className=""
-        // style={{
-        //   position: "relative",
-        //   width: "100%",
-        //   height: "100%",
-        //   objectFit: "cover",
-        // }}
+        style={{
+          position: "relative",
+          width: "100%",
+          height: "100%",
+          // objectFit: "cover",
+          backgroundColor: "#BEB0A7",
+        }}
       >
-        <div
-        >
-          <picture>
-            <source media="(min-width:1020px)" srcSet="./img/main_image2.png" />
-            <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
-            <img src="img/main_image.png" style={{ width: "100%", height:"100%" }} />
-          </picture>
-           
-        </div>
-       
-        <div
-          className="img"
-    
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
+        <picture>
+          <source media="(min-width:1020px)" srcSet="./img/main_image2.png" />
+          <source media="(min-width:1440px)" srcSet="./img/main_image3.png" />
+          <img src="img/main_image.png" style={{ width: "100%" , height: "100%"}} />
+        </picture>
+
+        <div className="img" data-aos="fade-up" aos-easing="ease-in-sine">
           <img src="img/kakao_img.png" />
         </div>
-        <div
-          className="img-comment"
-
-          data-aos="fade-up"
-          data-aos-delay="50"
-        >
+        <div className="img-comment" data-aos="fade-up" data-aos-delay="50">
           <p>선물 고민 중인가요?</p>
         </div>
-        <div
-          className="img-comment2"
-
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="img-comment2" data-aos="fade-up" data-aos-delay="100">
           <p>1분이면 충분해요</p>
         </div>
-        <div
-          className="img-comment3"
-       
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
+        <div className="img-comment3" data-aos="fade-up" data-aos-delay="150">
           <p>200만건 이상의 선물 데이터를 분석했어요.</p>
         </div>
-        <div
-          className="img-comment4"
-         
-          data-aos="fade-up"
-          data-aos-delay="200"
-        >
+        <div className="img-comment4" data-aos="fade-up" data-aos-delay="200">
           <p>내게 꼭 맞는 선물 추천을 받아보세요.</p>
+        </div>
+        <div className="img-main" data-aos="fade-up" aos-easing="ease-in-sine">
+          <img src="img/beo_img_main_03.png" />
         </div>
       </div>
       <Sliders />
-      <div
-        className="beo"
-     
-      >
-        <div
-          className="beo-comment"
-        
-          data-aos="fade-up"
-          data-aos-delay="50"
-        >
+      <div className="beo">
+        <div className="beo-comment" data-aos="fade-up" data-aos-delay="50">
           <p>선물 전문가 베오가 도와드릴게요.</p>
         </div>
-        <div
-          className="beo-comment2"
-      
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="beo-comment2" data-aos="fade-up" data-aos-delay="100">
           <p>{beo_comment}</p>
         </div>
-        <div
-          className="beo-comment3"
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
+        <div className="beo-comment3" data-aos="fade-up" data-aos-delay="150">
           <p>{beo_comment2}</p>
         </div>
-        <div
-          className="beo-img"
-       
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
+        <div className="beo-img" data-aos="fade-up" aos-easing="ease-in-sine">
           <img src="img/phone.png" />
         </div>
       </div>
 
-      <div
-        className="beo2"
-    
-      >
-        <div
-          className="beo-comment4"
-    
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo2">
+        <div className="beo-comment4" data-aos="fade-up" data-aos-delay="100">
           <p>{beo_comment3}</p>
         </div>
-        <div
-          className="beo-comment5"
-
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
+        <div className="beo-comment5" data-aos="fade-up" data-aos-delay="150">
           <p>{beo_comment4}</p>
         </div>
-        <div
-          className="beo-img2"
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
-             <picture>
-            
+        <div className="beo-img2" data-aos="fade-up" aos-easing="ease-in-sine">
+          <picture>
             <source media="(min-width:1440px)" srcSet="img/no_ads_03.png" />
             <img src="img/no_ads.png" />
           </picture>
-         
         </div>
       </div>
 
-      <div
-        className="beo3"
-      >
-        <div
-          className="beo-comment6"
-   
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo3">
+        <div className="beo-comment6" data-aos="fade-up" data-aos-delay="100">
           <p>{beo_comment5}</p>
         </div>
-        <div
-          className="beo-comment7"
-    
-          data-aos="fade-up"
-          data-aos-delay="150"
-        >
+        <div className="beo-comment7" data-aos="fade-up" data-aos-delay="150">
           <p>{beo_comment6}</p>
         </div>
 
-        <div  className="beo-imgs">
+        <div className="beo-imgs">
           <div
             className="beo-chatimg"
-     
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
             <picture>
-            
-            <source media="(min-width:1440px)" srcSet="img/beo_chat01_03.png" />
-            <img src="img/beo_chat01.png" />
-          </picture>
-            
+              <source
+                media="(min-width:1440px)"
+                srcSet="img/beo_chat01_03.png"
+              />
+              <img src="img/beo_chat01.png" />
+            </picture>
           </div>
 
           <div
@@ -207,74 +164,59 @@ const Index = () => {
             aos-easing="ease-in-sine"
           >
             <picture>
-            
-            <source media="(min-width:1440px)" srcSet="img/beo_chat02_03.png" />
-            <img src="img/beo_chat02.png" />
-          </picture>
+              <source
+                media="(min-width:1440px)"
+                srcSet="img/beo_chat02_03.png"
+              />
+              <img src="img/beo_chat02.png" />
+            </picture>
           </div>
 
           <div
             className="beo-chatimg3"
-         
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
-             <picture>
-            
-            <source media="(min-width:1440px)" srcSet="img/beo_chat03_03.png" />
-            <img src="img/beo_chat03.png" />
-          </picture>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcSet="img/beo_chat03_03.png"
+              />
+              <img src="img/beo_chat03.png" />
+            </picture>
           </div>
 
           <div
             className="beo-chatimg4"
-          
             data-aos="fade-up"
             aos-easing="ease-in-sine"
           >
-             <picture>
-            
-            <source media="(min-width:1440px)" srcSet="img/beo_chat04_03.png" />
-            <img src="img/beo_chat04.png" />
-          </picture>
+            <picture>
+              <source
+                media="(min-width:1440px)"
+                srcSet="img/beo_chat04_03.png"
+              />
+              <img src="img/beo_chat04.png" />
+            </picture>
           </div>
         </div>
       </div>
 
-       <div
-        className="beo4"
-      >
-        <div
-          className="beo-comment8"
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo4">
+        <div className="beo-comment8" data-aos="fade-up" data-aos-delay="100">
           <p>{beo_comment7}</p>
         </div>
-        <div
-          className="beo-img3"
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
+        <div className="beo-img3" data-aos="fade-up" aos-easing="ease-in-sine">
           <img src="img/beo_req.png" />
         </div>
       </div>
 
-      <div
-        className="beo5"
-   
-      >
-      <div
-          className="review-comment"
-
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo5">
+        <div className="review-comment" data-aos="fade-up" data-aos-delay="100">
           <p>{review_comment}</p>
         </div>
         <div
           className="review-comment2"
-
           data-aos="fade-up"
           data-aos-delay="150"
         >
@@ -283,7 +225,6 @@ const Index = () => {
 
         <div
           className="review-img"
-          
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -292,7 +233,6 @@ const Index = () => {
 
         <div
           className="review-img2"
-        
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -301,7 +241,6 @@ const Index = () => {
 
         <div
           className="review-img3"
-         
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -310,7 +249,6 @@ const Index = () => {
 
         <div
           className="review-img4"
-         
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -318,110 +256,55 @@ const Index = () => {
         </div>
       </div>
 
-      <div
-        className="beo6"
-
-      >
-        <div
-          className="gift-comment"
-    
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo6">
+        <div className="gift-comment" data-aos="fade-up" data-aos-delay="100">
           <p>선물 연구소</p>
         </div>
 
-        <div
-          className="gift-comment2"
-
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="gift-comment2" data-aos="fade-up" data-aos-delay="100">
           <p>좋은 선물에 대해서 고민하고 연구합니다.</p>
         </div>
-        <div
-          className="gift-img"
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
-           <picture>
-            
+        <div className="gift-img" data-aos="fade-up" aos-easing="ease-in-sine">
+          <picture>
             <source media="(min-width:1440px)" srcSet="img/beo_gift03.png" />
             <img src="img/beo_gift01.png" />
           </picture>
-          
-          
         </div>
 
-        <div
-          className="gift-img2"
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
-           <picture>
-            
+        <div className="gift-img2" data-aos="fade-up" aos-easing="ease-in-sine">
+          <picture>
             <source media="(min-width:1440px)" srcSet="img/beo_gift04.png" />
             <img src="img/beo_gift02.png" />
           </picture>
-          
         </div>
       </div>
 
-      <div
-        className="beo7"
-
-      >
-        <div
-          className="faq"
- 
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+      <div className="beo7">
+        <div className="faq" data-aos="fade-up" data-aos-delay="100">
           <p>FAQ</p>
         </div>
 
-        <div
-          className="faq-menu"
-       
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
-          <div className='faq-menu2'>
-          <Accordion  />
+        <div className="faq-menu" data-aos="fade-up" aos-easing="ease-in-sine">
+          <div className="faq-menu2">
+            <Accordion />
           </div>
         </div>
       </div>
 
-      <div
-        className="beo8"
-      
-      >
-        <div
-          className="req-bg"
- 
-          data-aos="fade-up"
-          aos-easing="ease-in-sine"
-        >
-
-<picture>
-<source media="(min-width:1020px)" srcSet="/img/beo_bg02.png" />
+      <div className="beo8">
+        <div className="req-bg" data-aos="fade-up" aos-easing="ease-in-sine">
+          <picture>
+            <source media="(min-width:1020px)" srcSet="/img/beo_bg02.png" />
             <source media="(min-width:1440px)" srcSet="img/beo_bg03.png" />
-            <img src="img/beo_bg01.png" style={{width: "100%"}}  />
+            <img src="img/beo_bg01.png" style={{ width: "100%",  height: "400px" }} />
           </picture>
-         
         </div>
 
-        <div
-          className="req-comment"
-  
-          data-aos="fade-up"
-          data-aos-delay="100"
-        >
+        <div className="req-comment" data-aos="fade-up" data-aos-delay="100">
           <p>{req_comment}</p>
         </div>
         <div
           className="req-button"
-          
           data-aos="fade-up"
           aos-easing="ease-in-sine"
         >
@@ -429,44 +312,47 @@ const Index = () => {
         </div>
       </div>
 
-      <div
-        className="beo9"
-      >
-
-        
-        <div
-          className="bottom"
-        >
-             <picture>
-            <source media="(min-width:1020px)" srcSet="/img/beo_bottom_02.png" />
-            <source media="(min-width:1440px)" srcSet="/img/beo_bottom_03.png" />
-            <img src="/img/beo_bottom.png"  style={{ width: "100%", }}/>
+      <div className="beo9">
+        <div className="bottom" >
+          <picture>
+            <source
+              media="(min-width:1020px)"
+              srcSet="/img/beo_bottom_02.png"
+            />
+            <source
+              media="(min-width:1440px)"
+              srcSet="/img/beo_bottom_03.png"
+            />
+            <img src="/img/beo_bottom.png" style={{ width: "100%",height:"340px" }} />
           </picture>
-         
         </div>
       </div>
 
-      <div
-        className="beo10"
-      >
-        <div
-          className="bottom-button"
-        >
-           <picture>
-           <source media="(min-width:360)" src="./img/gift_button.png" />
+      {/* <div className="beo10">
+        <div className="bottom-button" >
+        <picture>
+            <source media="(min-width:360)" src="./img/gift_button.png" />
             <source media="(min-width:1020px )" src="./img/gift_button.png" />
-            <source media="(min-width:1440px)"  />
+            <source media="(min-width:1440px)" />
             <img src="./img/gift_button.png" />
           </picture>
-          
+        </div>
+      </div> */}
+
+
+      <div className="beo10">
+        <div className="bottom-button">
+          <picture>
+            <source media="(min-width:360)" srcSet="./img/gift_button.png" />
+            <source media="(min-width:1020px )" srcSet="/img/gift_button_02.png" />
+            <source media="(min-width:1440px)" />
+            <img src="./img/gift_button.png" />
+          </picture>
         </div>
       </div>
+      <Footer/>
     </div>
   );
-
-
-  
-
 };
 
 export default Index;
